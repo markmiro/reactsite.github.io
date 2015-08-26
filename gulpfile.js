@@ -10,21 +10,20 @@ gulp.task('copy', function () {
     .pipe(gulp.dest('dist'));
 });
 
-var ghPagesOptions = {
-    message: 'Update ' + new Date().toISOString() + ' [skip ci]',
-    branch: 'gh-pages'
-};
-
 gulp.task('default', ['copy']);
-
-gulp.task('deploy', ['default'], function () {
-  return gulp.src('dist/**')
-    .pipe($.ghPages(ghPagesOptions));
-});
 
 gulp.task('serve', function () {
   browserSync({
     server: ['dist']
   });
   gulp.watch(['app/**'], ['copy', reload]);
+});
+
+gulp.task('deploy', ['default'], function () {
+  var ghPagesOptions = {
+      message: 'Update ' + new Date().toISOString() + ' [skip ci]',
+      branch: 'gh-pages'
+  };
+  return gulp.src('dist/**')
+    .pipe($.ghPages(ghPagesOptions));
 });

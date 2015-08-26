@@ -19,6 +19,10 @@
     "url": "https://github.com/markmiro/reactsite.github.io/issues"
   },
   "homepage": "https://github.com/markmiro/reactsite.github.io",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "private": true,
   "devDependencies": {
     "browser-sync": "^2.8.2",
     "gulp": "^3.9.0",
