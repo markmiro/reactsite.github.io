@@ -1,0 +1,22 @@
+{
+  "name": "reactsite.github.io",
+  "version": "1.0.0",
+  "description": "A modern React-based starting point for single-page apps and statically generated websites",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/markmiro/reactsite.github.io.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "Mark Miro <markmirony@gmail.com> (http://markmiro.com/)",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/markmiro/reactsite.github.io/issues"
+  },
+  "homepage": "https://github.com/markmiro/reactsite.github.io"
+}
